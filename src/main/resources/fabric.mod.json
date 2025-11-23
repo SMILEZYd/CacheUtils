@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "cacheutils",
+	"version": "${version}",
+	"name": "CacheUtils",
+	"description": "Useful debugging mod designed to help with mods that cache textures",
+	"authors": [
+		"SMILEZYd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cacheutils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.smilezyd.cacheutils.CacheUtils"
+		]
+	},
+	"mixins": [
+		"cacheutils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+    "accessWidener": "cacheutils.accesswidener"
+}
